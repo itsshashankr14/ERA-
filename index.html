@@ -8,76 +8,91 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="EK.jpg" type="image/x-icon">
 </head>
-<body>
-    <header>
-         <div class="wrapper">
-            <div class="logo-container"></div>
-            <div class="logo" >EDUCATE KARNATAKA</div> 
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Exam</a></li>
-                <li><a href="#">College</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>    
-         </div>
-         <div class="search-container">
-            <form action="" method="">
-              <input type="text" id="mySearch" onkeyup="myFunction()"  placeholder="Search...Course... Exam...">
-             <ul id="myMenu">
-               <li><a href="#">HTML</a></li>
-               <li><a href="#">CSS</a></li>
-               <li><a href="#">JavaScript</a></li>
-               <li><a href="#">PHP</a></li>
-               <li><a href="#">Python</a></li>
-               <li><a href="#">jQuery</a></li>
-               <li><a href="#">SQL</a></li>
-               <li><a href="#">Bootstrap</a></li>
-               <li><a href="#">Node.js</a></li>
-               <li><a href="#">HTML</a></li>
-               <li><a href="#">CSS</a></li>
-               <li><a href="#">JavaScript</a></li>
-               <li><a href="#">PHP</a></li>
-               <li><a href="#">Python</a></li>
-               <li><a href="#">jQuery</a></li>
-               <li><a href="#">SQL</a></li>
-               <li><a href="#">Bootstrap</a></li>
-               <li><a href="#">Node.js</a></li>
-               </ul>
-               </form>
-          </div>
-          <script>
-            function myFunction() {
-              var input, filter, ul, li, a, i;
-              input = document.getElementById("mySearch");
-              filter = input.value.toUpperCase();
-              ul = document.getElementById("myMenu");
-              li = ul.getElementsByTagName("li");
-              for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                  li[i].style.display = "";
-                } else {
-                  li[i].style.display = "none";
-                }
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader" ></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom" >
+      <header >
+        <div class="wrapper">
+          <div class="logo-container"></div>
+          <div class="logo" >EDUCATE KARNATAKA</div> 
+          <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Exam</a></li>
+              <li><a href="#">College</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>    
+       </div>
+       <div class="search-container">
+          <form action="" method="">
+            <input type="text" id="mySearch" onkeyup="myFunction()"  placeholder="Search...Course... Exam...">
+           <ul id="myMenu">
+             <li><a href="#">HTML</a></li>
+             <li><a href="#">CSS</a></li>
+             <li><a href="#">JavaScript</a></li>
+             <li><a href="#">PHP</a></li>
+             <li><a href="#">Python</a></li>
+             <li><a href="#">jQuery</a></li>
+             <li><a href="#">SQL</a></li>
+             <li><a href="#">Bootstrap</a></li>
+             <li><a href="#">Node.js</a></li>
+             <li><a href="#">HTML</a></li>
+             <li><a href="#">CSS</a></li>
+             <li><a href="#">JavaScript</a></li>
+             <li><a href="#">PHP</a></li>
+             <li><a href="#">Python</a></li>
+             <li><a href="#">jQuery</a></li>
+             <li><a href="#">SQL</a></li>
+             <li><a href="#">Bootstrap</a></li>
+             <li><a href="#">Node.js</a></li>
+             </ul>
+             </form>
+        </div>
+        <script>
+          function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
               }
             }
-            </script>
-         <div class="text">
-            <h1>WELCOME TO EDUCATE KARNATAKA</h1>
-            <p>Education is the process of acquiring knowledge, skills, values, and attitudes through various forms 
-                of learning. It plays a crucial role in personal development, social mobility, and economic growth. </p>
-                <h2>what are looking for </h2>
-            <a href="#">Colleges </a>
-            <a href="#">Course</a>
-            <a href="#">Exams</a>
-         </div>
-    </header> 
-    <footer>
-        <p>&copy; 2023 EDUCATE KARNATAKA. All Rights Reserved.</p>
-        <a href="mailto:educatekarnataka@gmail.com">support</a></p>
-      </footer>
-
+          }
+          </script>
+       <div class="text">
+          <h1>WELCOME TO EDUCATE KARNATAKA</h1>
+          <p>Education is the process of acquiring knowledge, skills, values, and attitudes through various forms 
+              of learning. It plays a crucial role in personal development, social mobility, and economic growth. </p>
+              <h2>what are looking for </h2>
+          <a href="#">Colleges </a>
+          <a href="#">Course</a>
+          <a href="#">Exams</a>
+       </div>
+  </header> 
+  <footer>
+      <p>&copy; 2023 EDUCATE KARNATAKA. All Rights Reserved.</p>
+      <a href="mailto:educatekarnataka@gmail.com">support</a></p>
+    </footer>
+    <script>
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+      </script>
+    </div>
+         
 </body>
 </html> 
