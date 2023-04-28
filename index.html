@@ -6,6 +6,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="EK.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -23,12 +24,46 @@
          </div>
          <div class="search-container">
             <form action="" method="">
-              <input type="text" name="q" placeholder="Search...Course... Exam...">
-              <ul class="results"></ul>
-              <button type="submit" style="display:none;"></button>
-              <script src="script.js"></script>
-            </form>
+              <input type="text" id="mySearch" onkeyup="myFunction()"  placeholder="Search...Course... Exam...">
+             <ul id="myMenu">
+               <li><a href="#">HTML</a></li>
+               <li><a href="#">CSS</a></li>
+               <li><a href="#">JavaScript</a></li>
+               <li><a href="#">PHP</a></li>
+               <li><a href="#">Python</a></li>
+               <li><a href="#">jQuery</a></li>
+               <li><a href="#">SQL</a></li>
+               <li><a href="#">Bootstrap</a></li>
+               <li><a href="#">Node.js</a></li>
+               <li><a href="#">HTML</a></li>
+               <li><a href="#">CSS</a></li>
+               <li><a href="#">JavaScript</a></li>
+               <li><a href="#">PHP</a></li>
+               <li><a href="#">Python</a></li>
+               <li><a href="#">jQuery</a></li>
+               <li><a href="#">SQL</a></li>
+               <li><a href="#">Bootstrap</a></li>
+               <li><a href="#">Node.js</a></li>
+               </ul>
+               </form>
           </div>
+          <script>
+            function myFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("mySearch");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myMenu");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
          <div class="text">
             <h1>WELCOME TO EDUCATE KARNATAKA</h1>
             <p>Education is the process of acquiring knowledge, skills, values, and attitudes through various forms 
