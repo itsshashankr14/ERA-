@@ -44,7 +44,7 @@ header{
     float: left;
     margin-top: 25px;
     margin-left: 10px;
-    color: #fff;
+    color: #2500f5;
     font-size :2.0em; 
     text-transform: uppercase;
     font-weight: bold;
@@ -100,7 +100,7 @@ header{
     display: inline-block;
     text-align: center;
     top: 10%;
-    left: 13%;
+    right: 14%;
   }
   
   .search-container input[type="text"] {
@@ -117,7 +117,7 @@ header{
   .search-container ul {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 6%;
     width: 150%;
     max-height: 200px;
     overflow-y: scroll;
@@ -154,16 +154,67 @@ header{
   footer a{
     color:rgb(217, 223, 223);
   }
-
-
-  /* for laptop */
-@media (min-width:768px){
+/* for half screen laptop */
+@media (max-width:991px){
+    .logo{
+        font-size: 35px;
+        width: 55%;
+        margin: auto;
+        margin-bottom: 8px;
+        float: none;
+        color: rgb(255, 0, 0);
+            }
+        .menu{
+            float: none;
+            margin-top: ;
+            text-align: center;
+        }
+        .text{
+            width: 100%;
+            height: 10%;
+            left: -30%;
+            top: 10%;
+        }
+        .text h1{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .text h2{
+            font-size: 27px;
+            margin-bottom: 5px;
+        }
+        .text p{
+            font-size: 20px;
+            margin-bottom: 5px;  
+        }
+        .search-container{
+            top: 4%;
+            right:-5% ;
+        }
+        .search-container input[type="text"] {
+            width: 100%;
+        }
+        .search-container ul{
+            width: 90%;
+            
+        }
+        .text a{
+            font-size: 20px;
+        }
+        footer{
+            font-size: 22px;
+        }
+    
+        }
+  /* for tab */
+@media (max-width:768px){
     .logo{
     font-size: 35px;
     width: 55%;
     margin: auto;
     margin-bottom: 8px;
     float: none;
+    color: chartreuse;
         }
     .menu{
         float: none;
@@ -190,13 +241,14 @@ header{
     }
     .search-container{
         top: 4%;
-        left: 20%;
+        right:-5% ;
     }
     .search-container input[type="text"] {
-        width: 150%;
+        width: 100%;
     }
     .search-container ul{
-        width: 150%;
+        width: 90%;
+        
     }
     .text a{
         font-size: 20px;
@@ -207,7 +259,7 @@ header{
 
     }
   /* for phone  */
-@media (max-width:598px) {
+@media (max-width:498px) {
     .logo{
         float: left;
         width: 100%;
@@ -227,9 +279,10 @@ header{
     }
     .text{
         width: 100%;
-        height: 10%;
+        height: 1%;
         margin: 30% 0;
         top: 20%;
+        left: 0%;
     }
     .text h1{
         font-size: 20px;
@@ -245,12 +298,14 @@ header{
     }
     .search-container{
         top: 4%;
+        left: -0%;
     }
     .search-container input[type="text"] {
-        width: 100%;
+        width: 80%;
     }
     .search-container ul{
-        width: 100%;
+        width: 70%;
+        left: 14%;
     }
     .text a{
         font-size: 16px;
@@ -262,18 +317,18 @@ header{
 /* loading animation */
 #loader {
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 40%;
   z-index: 1;
-  border: 16px solid #f3f3f3;
+  border: 12px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid blue;
-  border-right: 16px solid green;
-  border-bottom: 16px solid red;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  border-top: 14px solid blue;
+  border-right: 14px solid green;
+  border-bottom: 14px solid red;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin s linear infinite;
 }
 
 @-webkit-keyframes spin {
