@@ -99,8 +99,8 @@ header{
     position: relative;
     display: inline-block;
     text-align: center;
-    top: 10%;
-    right: 14%;
+    top: 20%;
+    right: -10%;
   }
   
   .search-container input[type="text"] {
@@ -117,7 +117,7 @@ header{
   .search-container ul {
     position: absolute;
     top: 100%;
-    left: 6%;
+    left: 0%;
     width: 150%;
     max-height: 200px;
     overflow-y: scroll;
@@ -195,7 +195,7 @@ header{
             width: 100%;
         }
         .search-container ul{
-            width: 90%;
+            width: 100%;
             
         }
         .text a{
@@ -225,7 +225,7 @@ header{
         width: 100%;
         height: 10%;
         left: -30%;
-        top: 10%;
+        top: 20%;
     }
     .text h1{
         font-size: 30px;
@@ -247,7 +247,7 @@ header{
         width: 100%;
     }
     .search-container ul{
-        width: 90%;
+        width: 100%;
         
     }
     .text a{
@@ -259,7 +259,7 @@ header{
 
     }
   /* for phone  */
-@media (max-width:498px) {
+@media (max-width:598px) {
     .logo{
         float: left;
         width: 100%;
@@ -304,8 +304,8 @@ header{
         width: 80%;
     }
     .search-container ul{
-        width: 70%;
-        left: 14%;
+        width: 80%;
+        
     }
     .text a{
         font-size: 16px;
