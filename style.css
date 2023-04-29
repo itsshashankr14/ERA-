@@ -73,17 +73,26 @@ header{
     margin-bottom: 10px;
 
 }
+.text h4{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 8px;
+
+}
 .text a{
     background: orange;
     border-radius: 10px;
     padding: 10px 25px;
-    text-decoration: none;
+    text-decoration:none ;
     font-weight:bold;
     font-size: 20px;
     letter-spacing: 1px;
     margin-top: 20px;
     display: inline-block;
     color:#fff;
+    text-transform: uppercase;
 }
 .text a:hover{
     background: #fff;
@@ -99,7 +108,7 @@ header{
     position: relative;
     display: inline-block;
     text-align: center;
-    top: 15%;
+    top: 10%;
     left: -15%;
   }
   
@@ -117,7 +126,7 @@ header{
   .search-container ul {
     position: absolute;
     top: 100%;
-    left: 0%;
+    left: 0;
     width: 150%;
     max-height: 200px;
     overflow-y: scroll;
@@ -302,9 +311,11 @@ header{
     }
     .search-container input[type="text"] {
         width: 80%;
+        font-size: 12px;
     }
     .search-container ul{
         width: 80%;
+        left: 20px;
         
     }
     .text a{
