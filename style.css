@@ -99,8 +99,8 @@ header{
     position: relative;
     display: inline-block;
     text-align: center;
-    top: 20%;
-    right: -10%;
+    top: 15%;
+    left: -15%;
   }
   
   .search-container input[type="text"] {
