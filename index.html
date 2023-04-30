@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>NEW IDEA </title>
+   <title>EKS </title>
    <link rel="stylesheet" href="style.css">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="EK.jpg" type="image/x-icon">
 </head>
-<body onload="myFunction()" style="margin:0;">
-  <div id="loader" ></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom" >
+<body >
+  <div  ></div>
+    <div  >
       <header >
         <div class="wrapper">
           <div class="logo-container"></div>
@@ -25,67 +25,70 @@
           </ul>    
        </div>
        <div class="search-container">
-          <form action="" method="">
-            <input type="text" id="mySearch" onkeyup="myFunction()"  placeholder="Search...Course... Exam...">
-           <ul id="myMenu">
-             <li><a href="puc.html">PUC</a></li>
-             <li><a href="iti.html">ITI</a></li>
-             <li><a href="diploma.html">DIPLOMA</a></li>
-             <li><a href="paramedical.html">PARAMEDICAL</a></li>
-             <li><a href="bsc.html">BSc</a></li>
-             <li><a href="ba.html">BA</a></li>
-             <li><a href="bcom.html">BCom</a></li>
-             <li><a href="be.html">BE</a></li>
-             <li><a href="#"></a></li>
-            
-             </ul>
-             </form>
-        </div>
-        <script>
-          function myFunction() {
-            var input, filter, ul, li, a, i;
-            input = document.getElementById("mySearch");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myMenu");
-            li = ul.getElementsByTagName("li");
-            for (i = 0; i < li.length; i++) {
-              a = li[i].getElementsByTagName("a")[0];
-              if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        <div class="search-bar">
+          <input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." ></div>
+  <ul id="myUL" class="search">
+    <li><a href="index.html">PUC</a></li>
+    <li><a href="degree.html">ITI</a></li>
+    <li><a href="sh.html">PARAMEDICAL</a></li>
+    <li><a href="index.html">DIploma</a></li>
+    <li><a href="#">ba</a></li>
+    <li><a href="#">bsC</a></li><li><a href="index.html">nda</a></li>
+    <li><a href="degree.html">bcOM</a></li>
+    <li><a href="sh.html">be</a></li>
+    <li><a href="index.html">btECH</a></li>
+    <li><a href="#">short term courses</a></li>
+    <li><a href="#">s</a></li>
+    <li><a href="#">Cindy</a></li>
+  </ul>
+  <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 li[i].style.display = "";
-              } else {
+            } else {
                 li[i].style.display = "none";
-              }
             }
-          }
-          </script>
+        }
+      }
+    </script>
+  </div>
+  </div>
        <div class="text">
           <h1>WELCOME TO EDUCATE KARNATAKA</h1>
           <p>Education is the process of acquiring knowledge, skills, values, and attitudes through various forms 
               of learning. It plays a crucial role in personal development, social mobility, and economic growth. </p>
               <h2>what are you comleted now </h2>
-          <a href="#">sslc</a>
-          <a href="#">puc</a>
+          <a href="sh.html">sslc</a>
+          <a href="sh.html">puc</a>
           <h4>Are you looking for job orientend Courses</h4>
-          <a href="#">short term courses</a>
+          <a href="sh.html">short term courses</a>
        </div>
   </header> 
   <footer>
       <p>&copy; 2023 EDUCATE KARNATAKA. All Rights Reserved.</p>
       <a href="mailto:educatekarnataka@gmail.com">support</a></p>
     </footer>
-    <script>
-      var myVar;
-      
-      function myFunction() {
-        myVar = setTimeout(showPage, 3000);
-      }
-      
-      function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-      }
-      </script>
     </div>
-         
+    
+      <script>
+        const dropdownInput = document.getElementById("myInput");
+        const dropdownMenu = document.getElementById("myUL");
+      
+      dropdownInput.addEventListener("click", function() {
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
+      });
+      </script>        
 </body>
 </html> 

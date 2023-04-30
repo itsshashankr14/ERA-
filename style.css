@@ -44,14 +44,20 @@ header{
     float: left;
     margin-top: 25px;
     margin-left: 10px;
-    color: #2500f5;
-    font-size :2.0em; 
+    color: #19f15a;
+    font-size :2.5em; 
     text-transform: uppercase;
     font-weight: bold;
 }
+.logo.logo:hover{
+    background-color: #ff871d;
+    color: #fff7f7;
+    border-radius: 25px;
+    padding: 5px 5px;
+
+}
 .text{
     position: absolute;
-    width: 600px;
     height: 300px;
     margin: 20% 30%;
     text-align: center;
@@ -100,7 +106,7 @@ header{
 }
 .text p{
     color: #fff;
-    font-size: 12px;  
+    font-size: 16px;  
 }
 
 /* search bar  */
@@ -108,12 +114,12 @@ header{
     position: relative;
     display: inline-block;
     text-align: center;
-    top: 10%;
-    left: -15%;
+    top: 15%;
+    left: 3%;
   }
   
   .search-container input[type="text"] {
-    width: 150%;
+    width: 175%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -127,7 +133,7 @@ header{
     position: absolute;
     top: 100%;
     left: 0;
-    width: 150%;
+    width: 175%;
     max-height: 200px;
     overflow-y: scroll;
     margin: 0;
@@ -136,23 +142,28 @@ header{
     border-radius: 4px;
     border: 1px solid #ddd;
     background-color: #fff;
-    z-index: 1;
-    display: none;
+    z-index: 100;
+    display:none ;
+    overflow-y: scroll;
   }
   
   .search-container li {
     padding: 12px 20px;
-    cursor: pointer;
+    
+  }
+  .search{
+    text-transform:uppercase;
   }
   
   .search-container li:hover {
     background-color: #f2f2f2;
   }
-  
+  .search-bar :hover .search{
+    display:block;
+  }
   .search-container input[type="text"]:focus + ul {
     display: block;
   }
-  
   /* footer element */
   footer{
     text-align: center;
@@ -175,7 +186,7 @@ header{
             }
         .menu{
             float: none;
-            margin-top: ;
+
             text-align: center;
         }
         .text{
@@ -198,13 +209,13 @@ header{
         }
         .search-container{
             top: 4%;
-            right:-5% ;
+            left: 25%;
         }
         .search-container input[type="text"] {
-            width: 100%;
+            width: 140%;
         }
         .search-container ul{
-            width: 100%;
+            width: 140%;
             
         }
         .text a{
@@ -227,14 +238,13 @@ header{
         }
     .menu{
         float: none;
-        margin-top: ;
         text-align: center;
     }
     .text{
         width: 100%;
         height: 10%;
         left: -30%;
-        top: 20%;
+        top: 15%;
     }
     .text h1{
         font-size: 30px;
@@ -250,13 +260,13 @@ header{
     }
     .search-container{
         top: 4%;
-        right:-5% ;
+        left: 25%;
     }
     .search-container input[type="text"] {
-        width: 100%;
+        width: 120%;
     }
     .search-container ul{
-        width: 100%;
+        width: 120%;
         
     }
     .text a{
@@ -290,7 +300,7 @@ header{
         width: 100%;
         height: 1%;
         margin: 30% 0;
-        top: 20%;
+        top: 8%;
         left: 0%;
     }
     .text h1{
@@ -307,15 +317,14 @@ header{
     }
     .search-container{
         top: 4%;
-        left: -0%;
+        left: 25%;
     }
     .search-container input[type="text"] {
-        width: 80%;
+        width: 120%;
         font-size: 12px;
     }
     .search-container ul{
-        width: 80%;
-        left: 20px;
+        width: 120%;
         
     }
     .text a{
@@ -324,53 +333,32 @@ header{
     footer{
         font-size: 15px;
     }
+@media (max-width:398px) {
+    .logo{
+        color: brown;
+    }
+    .search-container{
+        top: 4%;
+        left: 20%;
+    }
+    .search-container input[type="text"] {
+        width: 80%;
+        font-size: 12px;
+    }
+    .search-container ul{
+        width: 80%;
+        left: 20px;     
+    }
+    .text{
+        width: 100%;
+        height: 1%;
+        margin: 30% 0;
+        top: 20%;
+        left: 0%;
+        line-height: px;
+    }
 }
-/* loading animation */
-#loader {
-  position: absolute;
-  left: 45%;
-  top: 40%;
-  z-index: 1;
-  border: 12px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 14px solid blue;
-  border-right: 14px solid green;
-  border-bottom: 14px solid red;
-  width: 80px;
-  height: 80px;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin s linear infinite;
 }
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
 #myDiv {
   display: none;
   text-align: center;
