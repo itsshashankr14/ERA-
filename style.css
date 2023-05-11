@@ -7,7 +7,7 @@ body{
 }
 header{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(student.png);
-    height: 100vh;
+    height: 120vh;
     background-size: cover;
     background-position: center;
     position: relative;
