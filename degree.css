@@ -74,6 +74,13 @@ body {
     padding-top: 60px;
   }
   
+  
+  @media  (max-width:991px){
+    .sidenav{
+      top: 17%;
+    }
+  }
+
   @media(max-width: 598px) {
     .sidenav {
       padding-top: 15px;
@@ -112,15 +119,11 @@ body {
     .main p{
         font-size: 16px;
     }
-  }
-  @media  (max-width:991px){
-    .sidenav{
-      top: 20%;
-    }
-  }
+  } 
+
   @media(max-width:350px){
     .sidenav{
-      top: 19%;
+      top: 15%;
     }
     .sidenav strong{
         font-size: 16px;

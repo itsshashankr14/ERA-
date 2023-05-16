@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Courses</title>
   <style>
-    .navbar {
+   .navbar {
     /* margin: 0; */
     overflow: hidden;
     background-color: #730a0a;
@@ -32,9 +32,14 @@
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width:300px;
+    max-width: 300px;
+    margin: auto;
     text-align: center;
     font-family: arial;
+}
+
+#after{
+  padding-top: 4%;
 }
 
 .card a {
@@ -73,6 +78,21 @@
 }
 
 
+.container2{
+    display:flex;
+    gap: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+.container3{
+    display:flex;
+    gap: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+
 @media only screen and (max-width:498px){
   .container{
     overflow-x: scroll;
@@ -93,8 +113,10 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  @media(max-width:850px){
-    
+  @media(max-width:991px){
+    /* body{
+      background-color: black;
+    } */
     .navbar a {
       text-align: center;
       display: inline-flex;
@@ -105,12 +127,30 @@
       text-decoration: none;
       font-size: 18px;
     }
+
+    #after{
+      padding-top: 8%;
+    }
+    .container2{
+        display:flex;
+        gap: 20px;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .container{
+        display: none;
+    }
+    .container3{
+        display: none;
+    }
+
   }
   
-  @media(max-width:600px){
-    /* body{
-      background-color: black;
-    } */
+/* For phone compatability */
+
+  @media(max-width:750px){
+  
     .navbar a {
       text-align: center;
       display: inline-flex;
@@ -121,27 +161,53 @@
       text-decoration: none;
       font-size: 18px;
     }
+    #after{
+      padding-top: 7%;
+    }
+    .container2{
+        display:flex;
+        gap: 20px;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .container{
+        display: none;
+    }
+    .container3{
+        display: flex;
+    }
   }
+  
 
-  @media(max-width:400px){
+  @media(max-width:500px){
 
-      .card{
-        margin-top: 30%;
-        height: 300%;
-      }
+    .navbar a {
+      text-align: center;
+      display: inline-flex;
+      color: #eeeeee;
+      padding: 15px;
+      padding-left: 2%;
+      font-weight: bolder;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    #after{
+      padding-top: 8%;
+    }
   }
   
   </style>
 </head>
 <body>
   <div class="navbar">
-    <a href="index.html" target="_blank">Home</a>
-    <a href="course.html" target="_blank">Courses</a>
-    <a href="college.html" target="_blank">Colleges</a>
-    <a href="exam.html" target="_blank">Exam</a>
-  </div>
+    <a href="index.html">Home</a>
+    <a href="course.html">Courses</a>
+    <a href="college.html">Colleges</a>
+    <a href="exam.html">Exam</a>
+</div>
 
-	<h1>After SSLC</h1>
+	<h1 id="after">All courses</h1>
 	<div class="container">
         <div class="card">
             <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
@@ -172,6 +238,10 @@
             </div>
             
 	</div>
+
+ 
+
+
   <div class="container">
     <div class="card">
         <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
@@ -202,6 +272,130 @@
           <p> <a href="short_term.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
           <br>
         </div>
-</div>
+    </div>
+
+    <!-- Container2 Starts -->
+        <div class="container2">
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>PUC</h1>
+                <p>PUC stands for Pre-University Course. It is an intermediate level of education in India,</p>             
+                <p> <a href="puc.html" class="btn" target="_blank">Read More &rAarr;</a></p>
+            </div>
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Diploma</h1>             
+              <p>A diploma is an academic or professional qualification awarded by an educational institution or organization</p>
+                <p> <a href="diploma.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+              </div>
+             <div class="card">
+              <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+              <h1>ITI</h1>         
+              <p>ITI, which stands for Industrial Training Institute, is a vocational training institution that offerss</p>
+              <p> <a href="iti.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Paramedical</h1>               
+                  <p>Paramedical refers to the field of healthcare that supports and assists medical professionals in patient care</p>
+                <p> <a href="para.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+            </div>
+        
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>BE/B.TECH</h1>
+                <p>Both BE and B.Tech are undergraduate academic degrees awarded in the field of engineering and technology.</p>
+                <p> <a href="be.html" class="btn" target="_blank">Read More &rAarr;</a></p>
+            </div>
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Degree</h1>             
+                <p>A degree is an academic qualification awarded by a college or university upon the successful completion </p>
+                <p> <a href="degree.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+            </div>
+        </div>
+        <div class="container2">
+
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Medical</h1>         
+                <P>The medical field encompasses a wide range of disciplines and professions related to healthcare</P>
+                <p> <a href="medical.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+              </div>
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Short-term courses list</h1>               
+                <br>
+                  <!-- <p>Paramedical refers to the field of healthcare that supports and assists medical professionals in patient care</p> -->
+                <p> <a href="short_term.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+                <br>
+              </div>
+        </div>
+        <!-- Container2 ends -->
+
+
+        <div class="container3">
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>PUC</h1>
+                <p>PUC stands for Pre-University Course. It is an intermediate level of education in India,</p>             
+                <p> <a href="puc.html" class="btn" target="_blank">Read More &rAarr;</a></p>
+            </div>
+
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Diploma</h1>             
+              <p>A diploma is an academic or professional qualification awarded by an educational institution or organization</p>
+                <p> <a href="diploma.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+              </div>
+        </div>
+        <div class="container3">
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>ITI</h1>         
+                <p>ITI, which stands for Industrial Training Institute, is a vocational training institution that offerss</p>
+                <p> <a href="iti.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+            </div>
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Paramedical</h1>               
+                  <p>Paramedical refers to the field of healthcare that supports and assists medical professionals in patient care</p>
+                <p> <a href="para.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>BE/B.TECH</h1>
+                <p>Both BE and B.Tech are undergraduate academic degrees awarded in the field of engineering and technology.</p>
+                <p> <a href="be.html" class="btn" target="_blank">Read More &rAarr;</a></p>
+            </div>
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Degree</h1>             
+                <p>A degree is an academic qualification awarded by a college or university upon the successful completion </p>
+                <p> <a href="degree.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Medical</h1>         
+                <P>The medical field encompasses a wide range of disciplines and professions related to healthcare</P>
+                <p> <a href="medical.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+              </div>
+            <div class="card">
+                <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+                <h1>Short-term courses list</h1>               
+                <br>
+                  <!-- <p>Paramedical refers to the field of healthcare that supports and assists medical professionals in patient care</p> -->
+                <p> <a href="short_term.html" class="btn" target="_blank">Read More &rAarr;</a> </p>
+                <br>
+              </div>
+        </div> 
+        </div>
 </body>
 </html>
