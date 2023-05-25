@@ -1,0 +1,145 @@
+.navbar {
+  /* margin: 0; */
+  overflow: hidden;
+  background-color: #730a0a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* padding-bottom: ; */
+}
+
+#below{
+  padding-top: 4%;
+}
+
+.navbar a {
+  text-align: center;
+  display: inline-flex;
+  color: #eeeeee;
+  padding: 15px;
+  padding-left: 14%;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #1c87c9;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.card a {
+  border: none;
+  outline: 0;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card a:hover {
+  opacity: 0.7;
+}
+.container{
+    display:flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.container2{
+  display: none;
+}
+ 
+.card h1{
+  font-size:15px ;
+  text-transform: uppercase;
+}
+.card p{
+  font-size: 12px;
+}
+
+.btn{
+	color: aliceblue;
+}
+
+
+
+@media only screen and (max-width:498px){
+  .container{
+    overflow-x: scroll;
+    white-space:normal;
+  }
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media(max-width:850px){
+  
+  .navbar a {
+    text-align: center;
+    display: inline-flex;
+    color: #eeeeee;
+    padding: 15px;
+    padding-left: 9%;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .container{
+    display: none;
+  }
+  .container2{
+      display:flex;
+      gap: 20px;
+      margin-top: 10px;
+  }
+}
+
+@media(max-width:600px){
+  /* body{
+    background-color: black;
+  } */
+  .navbar a {
+    text-align: center;
+    display: inline-flex;
+    color: #eeeeee;
+    padding: 15px;
+    padding-left: 6%;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+@media(max-width:500px){
+
+  .navbar a {
+    text-align: center;
+    display: inline-flex;
+    color: #eeeeee;
+    padding: 15px;
+    padding-left: 4%;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  #below{
+    padding-top: 6%;
+  }
+}

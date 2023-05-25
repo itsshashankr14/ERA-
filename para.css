@@ -60,6 +60,7 @@ body {
 }
 
 .main {
+  margin-top: 2%;
   margin-left: 30%; /* Same as the width of the sidenav */
   font-size: 25px; /* Increased text to enable scrolling */
   padding: 29px 10px;
@@ -78,6 +79,9 @@ body {
 @media  (max-width:991px){
   .sidenav{
     top: 17%;
+  }
+  .main{
+    margin-top: 20%;
   }
 }
 
