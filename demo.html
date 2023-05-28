@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .dropdown{
+        display: none;
+    }
+    @media (max-width:598px) {
+        .dropdown{
+        display: block;
+    }
+    }
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.dropdown-content {
+      display: none;
+    }
+    .sidenav {
+  height: 85%;
+  width:25%;
+  position: fixed;
+  z-index: 1;
+  top: 65px;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding-top: 30px;
+  overflow-x:scroll;
+  ;
+}
+
+.sidenav a {
+  /* text-align: ; */
+  padding: 15px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(4, 4, 37);
+  /* border: 2px solid black; */
+  display: block;
+}
+  </style>
+</head>
+<body>
+
+  <div class="dropdown">
+    <div onclick="toggleDropdown()">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+              var dropdownContent = document.getElementById("myDropdown");
+            if (dropdownContent.style.display === "none") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+            }
+            </script>
+    <div id="myDropdown" class="dropdown-content">
+        <div class="sidenav">
+            <a href="#medical"><strong>Medical courses list:</strong></a>
+            <h3 style="text-align: center;">MEDICINE (5-years)</h3>
+            <a href="#mbbs">MBBS - ALLOPATHIC</a>
+            <a href="#bums">BUMS - UNANI</a>
+            <a href="#bhms">BHMS - HOMEOPATHY</a>
+            <a href="#bams">BAMS - AYURVEDA</a>
+            <a href="#bnys">BNYS - -NATUROPATHY</a>
+            <!-- <a href="#bsc">BSc - AGRICULTURAL</a> -->
+            <a href="#bds">BDS - DENTAL</a>
+            <a href="#bvsc">BVSc - VETERINARY</a>
+            <a href="#bet">BET - PHYSIOTHERAPY</a>
+            <h3 style="text-align: center;">ALLIED HEALTH
+                SCIENCES(2/3 years course)</h3>
+                <a href="#bpharma">B.PHARM</a> 
+                <a href="#nursing">BSc. NURSING</a> 
+                <a href="#bot_therphy">BOT - OCCUPATIONAL THERAPY</a> 
+                <a href="#anesthesia">BSc - ANESTHESIA TEC            </a> 
+                <a href="#cardiac">BSc -CARDIAC TEC</a> 
+                <a href="#medicallab">BSc -MEDICAL LAB TEC</a> 
+                <a href="#nuclear">BSc - NUCLEAR MEDICINE</a> 
+                <a href="#theatre">BSc-OPERATION THEATRE</a> 
+                <a href="#"></a>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      var dropdownContent = document.getElementById("myDropdown");
+      if (dropdownContent.style.display === "none") {
+        dropdownContent.style.display = "block";
+      } else {
+        dropdownContent.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

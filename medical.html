@@ -14,43 +14,48 @@
         <a href="#colleges">Colleges</a>
         <a href="#colleges">Exam</a>
       </div>
-    <div class="sidenav">
-        <a href="#medical"><strong>Medical courses list:</strong></a>
-        <h3 style="text-align: center;">MEDICINE (5-years)</h3>
-        <a href="#mbbs">MBBS - ALLOPATHIC</a>
-        <a href="#bums">BUMS - UNANI</a>
-        <a href="#bhms">BHMS - HOMEOPATHY</a>
-        <a href="#bams">BAMS - AYURVEDA</a>
-        <a href="#bnys">BNYS - -NATUROPATHY</a>
-        <!-- <a href="#bsc">BSc - AGRICULTURAL</a> -->
-        <a href="#bds">BDS - DENTAL</a>
-        <a href="#bvsc">BVSc - VETERINARY</a>
-        <a href="#bet">BET - PHYSIOTHERAPY</a>
-        <h3 style="text-align: center;">ALLIED HEALTH
-            SCIENCES(2/3 years course)</h3>
-            <a href="#bpharma">B.PHARM</a> 
-            <a href="#nursing">BSc. NURSING</a> 
-            <a href="#bot_therphy">BOT - OCCUPATIONAL THERAPY</a> 
-            <a href="#anesthesia">BSc - ANESTHESIA TEC            </a> 
-            <a href="#cardiac">BSc -CARDIAC TEC</a> 
-            <a href="#medicallab">BSc -MEDICAL LAB TEC</a> 
-            <a href="#nuclear">BSc - NUCLEAR MEDICINE</a> 
-            <a href="#theatre">BSc-OPERATION THEATRE</a> 
-            <a href="#"></a>
-
-
-        <!-- <a href="#science">MBBS - ALLOPATHIC</a>
-        <a href="#commerce">BUMS - UNANI</a>
-        <a href="#arts">BHMS - HOMEOPATHY</a>
-        <a href="#arts">BAMS - AYURVEDA</a>
-        <a href="#arts">BNYS -NATUROPATHY</a>
-        <a href="#arts">BSc - AGRICULTURAL</a>
-        <a href="#arts">BDS - DENTAL</a>
-        <a href="#arts">BVSc - VETERINARY</a>
-        <a href="#arts">BET - PHYSIOTHERAPY</a>
-        <!-- <a href="#arts"></a> 
-        <a href="#arts"></a> 
-        <!-- <a href="#contact">Contact</a> --> 
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          var dropdownContent = document.getElementById("myDropdown");
+        if (dropdownContent.style.display === "none") {
+            dropdownContent.style.display = "block";
+        } else {
+            dropdownContent.style.display = "none";
+        }
+        }
+        </script>
+      <div id="myDropdown" class="dropdown-content">
+        <div class="sidenav">
+            <a href="#medical"><strong>Medical courses list:</strong></a>
+            <h3 style="text-align: center;">MEDICINE (5-years)</h3>
+            <a href="#mbbs">MBBS - ALLOPATHIC</a>
+            <a href="#bums">BUMS - UNANI</a>
+            <a href="#bhms">BHMS - HOMEOPATHY</a>
+            <a href="#bams">BAMS - AYURVEDA</a>
+            <a href="#bnys">BNYS - -NATUROPATHY</a>
+            <!-- <a href="#bsc">BSc - AGRICULTURAL</a> -->
+            <a href="#bds">BDS - DENTAL</a>
+            <a href="#bvsc">BVSc - VETERINARY</a>
+            <a href="#bet">BET - PHYSIOTHERAPY</a>
+            <h3 style="text-align: center;">ALLIED HEALTH
+                SCIENCES(2/3 years course)</h3>
+                <a href="#bpharma">B.PHARM</a> 
+                <a href="#nursing">BSc. NURSING</a> 
+                <a href="#bot_therphy">BOT - OCCUPATIONAL THERAPY</a> 
+                <a href="#anesthesia">BSc - ANESTHESIA TEC            </a> 
+                <a href="#cardiac">BSc -CARDIAC TEC</a> 
+                <a href="#medicallab">BSc -MEDICAL LAB TEC</a> 
+                <a href="#nuclear">BSc - NUCLEAR MEDICINE</a> 
+                <a href="#theatre">BSc-OPERATION THEATRE</a> 
+                <a href="#"></a>
+        </div>
     </div>
     <div class="main">
         <h2><u>Medical</u></h2>
@@ -79,7 +84,7 @@
                 <li><strong>Course Curriculum: </strong>The MBBS course curriculum covers various subjects such as Anatomy,                Physiology, Biochemistry, Pharmacology, Microbiology, Pathology, Forensic Medicine, and Community Medicine. The curriculum also includes practical training in hospitals, where students get hands-on experience of diagnosing and treating patients.                     </li>
                 <li><strong>Average Fees:</strong> The fees for MBBS courses vary widely depending on the college and location. On average, the fees for MBBS in government colleges range from INR 10,000 to INR 50,000 per year, while the fees for private colleges can range from INR 5 lakhs to INR 25 lakhs per year. </li>
             </ul>
-        </section> 
+       </section><hr> 
         <br>
         <section class="bums" id="bums">
             <h2>2.BUMS – UNANI (Bachelor of Unani Medicine and Surgery) </h2>
@@ -95,7 +100,7 @@
                     </li>
                 <li><strong>Average Fees:</strong> The fees for BUMS courses vary widely depending on the college and location. On average, the fees for BUMS in government colleges range from INR 10,000 to INR 50,000 per year, while the fees for private colleges can range from INR 1 lakh to INR 5 lakhs per year. </li>                          
             </ul>
-        </section> 
+       </section><hr> 
         <br>
         <section class="bhms" id="bhms">
             <h2>3.BHMS – HOMEOPATHY (Bachelor of Homeopathic Medicine and Surgery) </h2>
@@ -111,7 +116,7 @@
                     </li>
                 <li><strong>Average Fees:</strong> The fees for BHMS courses vary widely depending on the college and location. On average, the fees for BHMS in government colleges range from INR 10,000 to INR 50,000 per year, while the fees for private colleges can range from INR 2 lakhs to INR 6 lakhs per year.  </li>                          
             </ul>
-        </section> 
+       </section><hr> 
         <br>
         <section class="bams" id="bams">
             <h2>4.BAMS – AYURVEDA (Bachelor of Ayurvedic Medicine and Surgery) </h2>
@@ -125,7 +130,7 @@
                 <li><strong>Course Curriculum:</strong> The BAMS course curriculum covers various subjects such as Anatomy, Physiology, Biochemistry, Pharmacology, Toxicology, Ayurvedic Medicine, Surgery, Obstetrics, and Gynecology. The curriculum also includes practical training in hospitals and Ayurvedic clinics, where students get hands-on experience of diagnosing and treating patients using Ayurvedic medicine. </li>
                 <li><strong>Average Fees:</strong> The fees for BAMS courses vary widely depending on the college and location. On average, the fees for BAMS in government colleges range from INR 10,000 to INR 50,000 per year, while the fees for private colleges can range from INR 2 lakhs to INR 6 lakhs per year.  </li>                          
             </ul>
-        </section> 
+       </section><hr> 
         <br>
         <section class="bnys" id="bnys">
             <h2>5.BNYS -NATUROPATHY (Bachelor of Naturopathy and Yogic Science) </h2>
@@ -141,7 +146,7 @@
                     </li>
                 <li><strong>Average Fees: </strong>The fees for BNYS courses vary widely depending on the college and location. On average, the fees for BNYS in government colleges range from INR 10,000 to INR 50,000 per year, while the fees for private colleges can range from INR 1.5 lakhs to INR 4 lakhs per year. </li>                          
             </ul>
-        </section> 
+       </section><hr> 
         <br>
         <section class="bds" id="bds">
             <h2>6.BDS – DENTAL (Bachelor of Dental Surgery) </h2>
@@ -158,7 +163,7 @@
                     </li>
                 <li><strong>Average Fees: </strong>The fees for BDS courses vary widely depending on the college and location. On average, the fees for BDS in government colleges range from INR 50,000 to INR 2 lakhs per year, while the fees for private colleges can range from INR 2 lakhs to INR 10 lakhs per year. </li>                          
             </ul>
-        </section> 
+       </section><hr> 
         <br><section class="bvsc" id="bvsc">
             <h2>7.BVSc – VETERINARY (Bachelor of Veterinary Science)</h2>
             <p>BVSc (Bachelor of Veterinary Science) is an undergraduate degree program in the field of veterinary science that focuses on the prevention, diagnosis, and treatment of diseases in animals. It is a popular course among students interested in animal healthcare and welfare. </p>
@@ -173,7 +178,7 @@
                     </li>
                 <li><strong>Average Fees:</strong> The fees for BVSc courses vary widely depending on the college and location. On average, the fees for BVSc in government colleges range from INR 10,000 to INR 50,000 per year, while the fees for private colleges can range from INR 1 lakh to INR 5 lakhs per year.  </li>                          
             </ul>
-        </section> 
+       </section><hr> 
         <br>
         <section class="bet" id="bet">
             <h2>8.BET – PHYSIOTHERAPY (Bachelors of Physiotherapy )</h2>
@@ -215,7 +220,7 @@
                 </li>                          
             </ul>
             <p>Overall, BPT is a highly sought-after course in India and offers good career opportunities to the students. </p>
-        </section> 
+       </section><hr> 
 
 
 
@@ -239,7 +244,7 @@
                 <li><strong></strong></li>
                 <li><strong></strong></li>                          
             </ul>
-        </section> 
+       </section><hr> 
     -->
         <section class="bpharma" id="bpharma">
             <h1> <u>ALLIED HEALTH SCIENCES(2/3 years course)</u></h1>
@@ -259,7 +264,7 @@
                 <li><strong>Regulatory requirements:</strong> In India, the Pharmacy Council of India (PCI) regulates the education and practice of pharmacy. B.Pharma graduates need to register with the PCI to practice as a pharmacist.</li>
                 <li><strong>Job roles:</strong> Some of the popular job roles for B.Pharma graduates include pharmacist, drug inspector, regulatory affairs specialist, clinical research associate, medical representative, etc.</li>
             </ul>
-        </section>
+       </section><hr>
         <section class="nursing" id="nursing">
             <h2>2.	BSc.NURSING</h2>
             <p>B.Sc. Nursing is an undergraduate academic degree program in the field of nursing. The program is designed to prepare students with the necessary knowledge and skills required for the practice of nursing and patient care.</p>
@@ -277,7 +282,7 @@
                 <li><strong>Job roles:</strong> Some of the popular job roles for B.Sc. Nursing graduates include staff nurse, nursing supervisor, nursing educator, nursing administrator, public health nurse, and more.</li>
             
             </ul>
-        </section>
+       </section><hr>
         <section class="bot_therphy" id="bot_therphy">
             <h2>3. BOT – OCCUPATIONAL THERAPY:</h2>
             <p>BOT (Bachelor of Occupational Therapy) is an undergraduate academic degree program in the field of healthcare. The program is designed to prepare students with the necessary knowledge and skills required to become occupational therapists.</p>
@@ -293,7 +298,7 @@
                            
             </ul>
             <p>Overall, the BOT program provides students with the skills and knowledge necessary to help individuals with disabilities live a fulfilling life by enabling them to engage in their daily activities. It is an important field in the healthcare industry and offers a range of career opportunities for graduates.</p>
-        </section>
+       </section><hr>
         <section class="anesthesia" id="anesthesia">
             <h2>4.BSc-ANESTHESIA TEC:</h2>
             <p>BSc Anesthesia Technology is an undergraduate academic degree program in the field of healthcare. The program is designed to prepare students with the necessary knowledge and skills required to become anesthesia technologists.</p>
@@ -311,7 +316,7 @@
                 <li><strongJob roles:></strong> Some of the popular job roles for BSc Anesthesia Technology graduates include anesthesia technologist, medical equipment technologist, medical research associate, medical equipment sales representative, and more.</li>
             
             </ul>
-        </section>
+       </section><hr>
         <section class="cardiac" id="cardiac">
             <h2>5.BSc-CARDIAC TEC:</h2>
             <p>BSc Cardiac Technology is an undergraduate academic degree program in the field of healthcare. The program is designed to prepare students with the necessary knowledge and skills required to become cardiac technologists.</p>
@@ -329,7 +334,7 @@
                 <li><strong>Job roles:</strong> Some of the popular job roles for BSc Cardiac Technology graduates include cardiac technologist, medical equipment technologist, medical research associate, medical equipment sales representative, and more.</li>
             
             </ul>
-        </section>
+       </section><hr>
         <section class="medicallab" id="medicallab">
             <h2>6.BSc-MEDICALLAB TEC:</h2>
             <p>BSc Medical Laboratory Technology is an undergraduate academic degree program in the field of healthcare. The program is designed to prepare students with the necessary knowledge and skills required to become medical laboratory technologists.</p>
@@ -347,7 +352,7 @@
                 <li><strong>Job roles:</strong> Some of the popular job roles for BSc Medical Laboratory Technology graduates include medical laboratory technologist, laboratory manager, quality control technician, medical research associate, and more.</li>
             
             </ul>
-        </section>
+       </section><hr>
         <section class="nuclear" id="nuclear">
             <h2>7.BSc-NUCLEAR MEDICINE:</h2>
             <p>BSc Nuclear Medicine Technology is a 3-year undergraduate degree program that focuses on the application of radioactive substances to diagnose and treat diseases. Nuclear medicine technology is a specialized field in which radioactive materials are used to create images of the human body and to treat diseases such as cancer, heart disease, and neurological disorders.</p>
@@ -365,7 +370,7 @@
                 <li><strong>Job roles:</strong> Some of the popular job roles for BSc Nuclear Medicine Technology graduates include nuclear medicine technologist, radiation safety officer, medical research associate, medical equipment sales representative, and more.</li>
             
             </ul>
-        </section>
+       </section><hr>
         <section class="theatre" id="theatre">
             <h2>8.BSc-OPERATION THEATRE:</h2>
             <p>BSc Operation Theatre Technology is a 3-year undergraduate degree program that focuses on the use of technology and equipment to prepare and maintain an operating room for surgical procedures. The program aims to train students in the areas of patient care, anesthesia administration, surgical instrumentation, and infection control.</p>
@@ -383,7 +388,7 @@
                 <li><strong>Job roles:</strong> Some of the popular job roles for BSc Operation Theatre Technology graduates include operation theatre technologist, surgical assistant, medical equipment sales representative, medical research associate, and more.</li>
             
             </ul>
-        </section>
+       </section><hr>
         </div>
     </div>
 
@@ -405,6 +410,6 @@
                 <li><strong></strong></li>
             
             </ul>
-        </section> -->
+       </section><hr> -->
 </body>
 </html>

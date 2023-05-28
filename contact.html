@@ -1,56 +1,93 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-   <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
-    <link rel="stylesheet" href="contact.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 8px 0 rgba(249, 245, 245, 0.2), 0 6px 20px 0 rgba(247, 246, 246, 0.19);
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid black;
+}
+
+textarea{
+    height: 6rem;
+}
+
+button{
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: #673de6;
+    color: white;
+}
+
+.container{
+  padding: 15px;
+  border: 3px solid red;
+  box-shadow: 0 4px 8px 0 rgba(95, 91, 91, 0.2), 0 6px 20px 0 rgba(68, 62, 62, 0.19);
+  background: transparent;
+}
+
+@media (max-width:398px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        gap: 1rem;
+    }
+    button{
+        width: 6rem;
+        padding: 1rem;
+        cursor: pointer;
+        background: #673de6;
+        color: white;
+        align-items: center;
+    }
+    
+}
+    </style>
+</head>
 <body>
-  <div class="container">
-    <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Address</div>
-          <div class="text-one">Surkhet, NP12</div>
-          <div class="text-two">Birendranagar 06</div>
-        </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">+0098 9893 5647</div>
-          <div class="text-two">+0096 3434 5678</div>
-        </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">codinglab@gmail.com</div>
-          <div class="text-two">info.codinglab@gmail.com</div>
-        </div>
-      </div>
-      <div class="right-side">
-        <div class="topic-text">Send us a message</div>
-        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="send_email.php" method="post">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name" required>
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email" required>
-        </div>
-        <div class="input-box message-box">
-          
-        </div>
-        <div class="button">
-          <input type="button" value="Send Now" >
-        </div>
-      </form>
+    <div class="container">
+        <h1>Contact With Us </h1>
+        <form action="https://formspree.io/f/meqwwvnd"method="POST">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submit">submit</button>
+        </form>
     </div>
-    </div>
-  </div>
 </body>
 </html>
