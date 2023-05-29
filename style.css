@@ -17,10 +17,10 @@ header{
     margin: auto;
 }
 .menu{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-    margin-right: 10px;
+float: right;
+list-style: none;
+margin-top: 30px;
+margin-right: 10px;
 }
 .menu li{
     display: inline-block;

@@ -4,86 +4,140 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About Us </title>
+  <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
 	<style>
  body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(background.png);
+  background-size: cover;
+    background-position: center;
 }
 
-header {
-	background-color: #0077b6;
+.navbar {
+  /* margin: 0; */
+  overflow: hidden;
+  background-color: #730a0a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  text-align: center;
+  display: inline-flex;
+  color: #eeeeee;
+  padding: 15px;
+  padding-left: 14%;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  color: #1c87c9;
+}
+
+main{
+	height:77vh;
+	margin-top: 5%;
 	color: white;
-	padding: 20px;
+  font-family: acme;
 }
 
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
-	color: white;
-	text-decoration: none;
-	font-size: 20px;
+nav ul li {
+  display: inline;
+  margin-right: 10px;
 }
 
-nav a:hover {
-	text-decoration: underline;
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 main {
-	padding: 20px;
+  padding: 20px;
+  text-align: justify;
+  
 }
 
-section {
-	margin-bottom: 30px;
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-section h2 {
-	font-size: 24px;
-	margin-bottom: 10px;
+h1,
+h2{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: aqua;
 }
 
-section p {
-	font-size: 16px;
-	line-height: 1.5;
+p {
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
-ul {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
 }
 
-ul li {
-	flex-basis: 33.33%;
-	padding: 10px
+@media(max-width:598px){
+	main{
+	height:100vh;
+	margin-top: 24%;
+}
+}
+
+@media(max-width:991px){
+  main{
+    height: 100vh;
+    margin-top: 20%;
+   
+  }
+}
+@media(max-width:350px){
+  main{
+    height: 110vh;
+    margin-top: 25%;
+  }
 }
     </style>
 </head>
 <body>
 	<header>
-		<nav>
+		<div class="navbar">
 			<a href="index.html">Home</a>
-			<a href="about.html">About Us</a>
-			<a href="contact.html">Contact</a>
-		</nav>
-		<h1>About Us</h1>
-	</header>
-
-	<main>
-		<section>
-			<h2>Our Mission</h2>
-			<p>We are dedicated to helping students achieve their career goals by providing them with the resources and guidance they need to succeed.</p>
+			<a href="course.html">Courses</a>
+			<a href="college.html">Colleges</a>
+			<a href="exam.html">Exam</a>
+		</div>
+	  </header>
+	  <main>
+		<section class="about-section">
+		  <h1>About Us</h1>
+		  <p>Welcome to our educational website! We are dedicated to providing high-quality learning resources and courses to help you enhance your knowledge and skills in various subjects.</p>
+		  <p>At our website, you will find a wide range of courses and educational materials designed by experts in their respective fields. Whether you're a student, a professional looking to upskill, or simply someone who loves to learn, we have something for you.</p>
+		  <h2>Our Mission</h2>
+		  <p>"Our mission is to make education accessible to everyone, regardless of their background or location. We believe that learning should be engaging, interactive, and enjoyable".</p>
+		  <h2>Our Vision</h2>
+		  <p>"Our vision is to revolutionize education by creating an online platform that empowers learners worldwide to pursue their educational goals, discover their passions, and unlock their full potential. We strive to be a catalyst for positive change by providing accessible, inclusive, and personalized learning experiences".</p>
+		  
 		</section>
-	</main>
-
-	<footer>
-		<p>&copy; 2023 EDUCATE KARNATAKA. All rights reserved.</p>
-	</footer>
+	  </main>
+	  <footer>
+		<p>&copy; 2023 Educate Karnataka. All rights reserved.</p>
+	  </footer>
+	
 </body>
 </html>
