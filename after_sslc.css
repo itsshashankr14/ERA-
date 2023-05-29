@@ -9,7 +9,9 @@
 }
 
 #below{
+  margin-top: 15%;
   padding-top: 4%;
+  text-transform: uppercase;
 }
 
 .navbar a {
@@ -108,6 +110,9 @@
       display:flex;
       gap: 20px;
       margin-top: 10px;
+  }
+  #below{
+    margin-top: 15%;
   }
 }
 

@@ -10,6 +10,7 @@
   
   #below{
     padding-top: 4%;
+    text-transform: uppercase;
   }
   
   .navbar a {
@@ -82,12 +83,7 @@
       white-space:normal;
     }
   }
-  
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+
   @media(max-width:850px){
     
     .navbar a {
@@ -137,6 +133,9 @@
       font-weight: bolder;
       text-decoration: none;
       font-size: 18px;
+    }
+    #below{
+      margin-top: 20%;
     }
       
   }

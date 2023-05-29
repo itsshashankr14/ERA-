@@ -1,104 +1,157 @@
 body {
-    font-family: Verdana,sans-serif;
-    margin: 0;
-    /* font-family: "Lato", sans-serif; */
-  }
-  
-  .navbar {
-    /* margin: 0; */
-    overflow: hidden;
-    background-color: #730a0a;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .navbar a {
-    text-align: center;
-    display: inline-flex;
-    color: #eeeeee;
-    padding: 15px;
-    padding-left: 14%;
-    font-weight: bolder;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navbar a:hover {
-    color: #1c87c9;
-  }
-  
-  
-  .sidenav {
-    height: 100%;
-    width:25%;
-    position: fixed;
-    z-index: 1;
-    top: 53px;
-    left: 0;
-    background-color: #f1f1f1;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  .sidenav a {
-    padding: 16px 8px 20px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(4, 4, 37);
-    display: block;
-    
-  }
-  
-  .sidenav a:hover {
-    color: black;
-    background-color: #ccc;
-  }
-  
-  .main {
-    margin-left: 25%; /* Same as the width of the sidenav */
-    font-size: 25px; /* Increased text to enable scrolling */
-    padding: 29px 10px;
-    text-align: justify;
+  font-family: Verdana,sans-serif;
+  margin: 0;
+  /* font-family: "Lato", sans-serif; */
+}
 
-  }
-  /* .main  */
-  .main div h2{
-     padding-top: 60px;
-  }
-  
-  .main div ol li a{
-    text-decoration: none;
+.navbar {
+  /* margin: 0; */
+  overflow: hidden;
+  background-color: #730a0a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  }
+.navbar a {
+  text-align: center;
+  display: inline-flex;
+  color: #eeeeee;
+  padding: 15px;
+  padding-left: 14%;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 25px;
+}
 
-  .main div ol li a:hover{
-    text-decoration: underline;
-    color: red;
-  }
-  
-   .main section{
-    padding-top: 29px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  @media(max-width:850px){
-    /* body{
-        background-color: #0c0303;
-    } */
-    .navbar a {
-        text-align: center;
-        display: inline-flex;
-        color: #eeeeee;
-        padding: 15px;
-        padding-left: 6%;
-        font-weight: bolder;
-        text-decoration: none;
-        font-size: 18px;
-  }
+.navbar a:hover {
+  color: #1c87c9;
+}
+
+
+.sidenav {
+  height: 85%;
+  width:25%;
+  position: fixed;
+  z-index: 1;
+  top: 65px;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding-top: 30px;
+  overflow-x:scroll;
+  ;
+}
+
+.sidenav a {
+  /* text-align: ; */
+  padding: 15px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(4, 4, 37);
+  /* border: 2px solid black; */
+  display: block;
   
 }
 
+.sidenav a:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+.main {
+  margin-left: 30%; /* Same as the width of the sidenav */
+  font-size: 25px; /* Increased text to enable scrolling */
+  padding: 29px 10px;
+  text-align: justify;
+}
+
+.main h1{
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+.main .diploma h2{
+   padding-top: 60px;
+}
+
+
+ .main section{
+  padding-top: 60px;
+}
+section{
+  
+}
+
+
+@media  (max-width:991px){
+  .sidenav{
+    top: 17%;
+  }
+  .main{
+    margin-top: 13%;
+  }
+}
+
+@media(max-width: 598px) {
+  .sidenav {
+    padding-top: 15px;
+    height: 80%;
+    top: 15%;
+  }
+  .sidenav a {font-size: 20px;}
+  .main h2{
+    font-size: 25px;
+  }
+  .main{
+    float: left;
+  }
+  .main section{
+    padding-top: 20%;
+  }
+  .navbar a{
+    font-size: 20px;
+  }
+  .sidenav strong{
+      font-size: 16px;
+  }
+  .sidenav a{
+      font-size: 15px;
+  }
+  .main{
+  margin-top: 15%;
+  }
+  .main section ul li{
+      font-size: 15px;  
+  }
+  .main h3{
+      font-size: 20px;
+  }
+  .main p{
+      font-size: 16px;
+  }
+} 
+
+@media(max-width:350px){
+  .sidenav{
+    top: 15%;
+  }
+  .sidenav strong{
+      font-size: 16px;
+  }
+  .sidenav a{
+      font-size: 15px;
+  }
+  .main{
+  margin-top: 25%;
+  }
+  .main section ul li{
+      font-size: 15px;  
+  }
+  .main h3{
+      font-size: 20px;
+  }
+  .main p{
+      font-size: 16px;
+  }
+}

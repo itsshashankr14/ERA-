@@ -80,6 +80,9 @@ body {
   .sidenav{
     top: 17%;
   }
+  .main{
+    margin-top: 13%;
+  }
 }
 
 @media(max-width: 598px) {
@@ -87,7 +90,6 @@ body {
     padding-top: 15px;
     height: 80%;
     top: 15%;
-
   }
   .sidenav a {font-size: 20px;}
   .main h2{
@@ -109,7 +111,7 @@ body {
       font-size: 15px;
   }
   .main{
-  margin-top: 10%;
+  margin-top: 15%;
   }
   .main section ul li{
       font-size: 15px;  
@@ -133,7 +135,7 @@ body {
       font-size: 15px;
   }
   .main{
-  margin-top: 10%;
+  margin-top: 25%;
   }
   .main section ul li{
       font-size: 15px;  
