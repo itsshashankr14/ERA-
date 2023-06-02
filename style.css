@@ -41,6 +41,7 @@ margin-right: 10px;
 
 }
 .logo{
+    font-family: Bungee Spice;
     display: inline;
     margin-top: 25px;
     margin-left: 10px;
@@ -48,13 +49,6 @@ margin-right: 10px;
     font-size :2.5em; 
     text-transform: uppercase;
     font-weight: bold;
-}
-.logo.logo:hover{
-    background-color: #ff871d;
-    color: #fff7f7;
-    border-radius: 25px;
-    padding: 5px 5px;
-
 }
 .text{
     position: absolute;
