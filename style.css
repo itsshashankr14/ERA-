@@ -147,6 +147,7 @@ margin-right: 10px;
   }
   .search{
     text-transform:uppercase;
+    text-decoration: none;
   }
   
   .search-container li:hover {
